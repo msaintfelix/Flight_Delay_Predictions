@@ -3,7 +3,7 @@ DecisionTreeClassifier for Kaggle flight delay dataset.
 
 # Objective
 
-Too many times I have seen developers use the Scikit-Learn LabelEncoder() method to encode categorical features in order to feed a DecisionTreeClassifier. As per sklearn documentation, such method should only be used for the TARGET of the model, not for input features . In order to process categorical data properly, sure there is the OneHotEncoder() that can do the job but it gets computationally expensive with larger amounts of possible values and it generates sparse feature matrices.
+Too many times I have seen developers use the Scikit-Learn LabelEncoder() method to encode categorical features in order to feed a DecisionTreeClassifier. As per sklearn documentation, such method should only be used for the TARGET of the model, not for input features. In order to process categorical data properly, sure there is the OneHotEncoder() that can do the job but it gets computationally expensive with larger amounts of possible values and it generates sparse feature matrices.
 
 This project is about predicting if a flight will be delayed by over 15 minutes upon arrival, with Scikit-Learn DecisionTreeClassifier, using US flight data from January 2019 and January 2020. I tried to approach the categorical features problem in a functionnal and effective way. Here is how.
 
